@@ -14,6 +14,31 @@ import LocationDetailModal from '@/components/organisms/LocationDetailModal'
 import MiniGameModal from '@/components/organisms/MiniGameModal'
 import Text from '@/components/atoms/Text'
 
+const Instructions = ({ isOpen, onClose }) => {
+  if (!isOpen) return null
+  
+  return (
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+      <div className="bg-white p-6 rounded-lg max-w-md mx-4">
+        <h2 className="text-xl font-bold mb-4">How to Play</h2>
+        <ul className="space-y-2 text-sm">
+          <li>• Click on unlocked locations to explore</li>
+          <li>• Search for treasures in each location</li>
+          <li>• Solve mini-games to collect treasures</li>
+          <li>• Use hints when you're stuck</li>
+          <li>• Find all treasures to win!</li>
+        </ul>
+        <button 
+          onClick={onClose}
+          className="mt-4 px-4 py-2 bg-primary text-white rounded hover:bg-primary-dark"
+        >
+          Got it!
+        </button>
+      </div>
+    </div>
+  )
+}
+
 const TreasureHuntFeature = () => {
   const [locations, setLocations] = useState([])
   const [treasures, setTreasures] = useState([])
@@ -21,9 +46,10 @@ const TreasureHuntFeature = () => {
   const [selectedLocation, setSelectedLocation] = useState(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
-  const [showMiniGame, setShowMiniGame] = useState(false)
+const [showMiniGame, setShowMiniGame] = useState(false)
   const [miniGameCode, setMiniGameCode] = useState(['', '', ''])
   const [correctCode] = useState(['7', '3', '9'])
+  const [showInstructions, setShowInstructions] = useState(false)
 
   useEffect(() => {
     loadGameData()
@@ -217,11 +243,15 @@ const TreasureHuntFeature = () => {
       />
 
       <MiniGameModal
-        isOpen={showMiniGame}
+isOpen={showMiniGame}
         onClose={() => setShowMiniGame(false)}
         miniGameCode={miniGameCode}
-        updateMiniGameCode={updateMiniGameCode}
+        onUpdateMiniGameCode={updateMiniGameCode}
         onSubmit={handleMiniGameSubmit}
+      />
+      <Instructions
+        isOpen={showInstructions}
+        onClose={() => setShowInstructions(false)}
       />
     </div>
   )
