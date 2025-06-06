@@ -4,10 +4,11 @@ import Text from '@/components/atoms/Text'
 import GameProgress from '@/components/molecules/GameProgress'
 import NavigationPill from '@/components/molecules/NavigationPill'
 import { toast } from 'react-toastify'
+
 const GameControls = ({ score, treasuresFoundCount, totalTreasures, onResetGame, onShowInstructions }) => {
   return (
     <>
-      <div className="flex flex-wrap justify-between items-center mb-8">
+      <div className="flex flex-wrap items-center justify-between gap-4 mb-6 p-4 bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl border">
         <div className="flex items-center space-x-6">
           <div className="flex items-center space-x-2">
             <Icon name="Coins" className="text-primary w-6 h-6" />
@@ -17,16 +18,19 @@ const GameControls = ({ score, treasuresFoundCount, totalTreasures, onResetGame,
           </div>
         </div>
         
-        <div className="flex flex-wrap gap-4">
+        <div className="flex items-center gap-4">
+          <NavigationPill 
+            icon="RotateCcw" 
+            label="New Game" 
+            action={onResetGame} 
+            variant="secondary" 
+          />
           <NavigationPill 
             icon="HelpCircle" 
             label="Instructions" 
-            onClick={onShowInstructions}
-            variant="info"
+            action={onShowInstructions} 
+            variant="secondary" 
           />
-          <NavigationPill icon="RotateCcw" label="New Game" onClick={onResetGame} />
-          <NavigationPill icon="Trophy" label="Achievements" onClick={() => toast.info('Achievements coming soon!')} />
-          <NavigationPill icon="Settings" label="Settings" onClick={() => toast.info('Settings coming soon!')} />
         </div>
       </div>
       

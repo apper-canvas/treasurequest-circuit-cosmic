@@ -44,13 +44,12 @@ const TreasureHuntFeature = () => {
   const [treasures, setTreasures] = useState([])
   const [gameState, setGameState] = useState(null)
   const [selectedLocation, setSelectedLocation] = useState(null)
-  const [loading, setLoading] = useState(false)
+const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
-const [showMiniGame, setShowMiniGame] = useState(false)
+  const [showMiniGame, setShowMiniGame] = useState(false)
   const [miniGameCode, setMiniGameCode] = useState(['', '', ''])
   const [correctCode] = useState(['7', '3', '9'])
   const [showInstructions, setShowInstructions] = useState(false)
-
   useEffect(() => {
     loadGameData()
   }, [])
@@ -215,9 +214,8 @@ const [showMiniGame, setShowMiniGame] = useState(false)
     )
   }
 
-  return (
+return (
     <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-      {/* Main Map Area */}
       <div className="lg:col-span-3">
         <Card initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }} className="parchment-bg">
           <GameControls
@@ -225,6 +223,7 @@ const [showMiniGame, setShowMiniGame] = useState(false)
             treasuresFoundCount={gameState?.treasuresFound?.length || 0}
             totalTreasures={treasures.length}
             onResetGame={resetGame}
+            onShowInstructions={() => setShowInstructions(true)}
           />
           <IslandMap locations={locations} gameState={gameState} onLocationClick={handleLocationClick} />
         </Card>
@@ -241,9 +240,8 @@ const [showMiniGame, setShowMiniGame] = useState(false)
         onClose={() => setSelectedLocation(null)}
         onSearchTreasure={() => setShowMiniGame(true)}
       />
-
-      <MiniGameModal
-isOpen={showMiniGame}
+<MiniGameModal
+        isOpen={showMiniGame}
         onClose={() => setShowMiniGame(false)}
         miniGameCode={miniGameCode}
         onUpdateMiniGameCode={updateMiniGameCode}

@@ -69,8 +69,8 @@ const Instructions = ({ isOpen, onClose }) => {
     }
   ]
 
-  return (
-    <Modal isOpen={isOpen} onClose={onClose} title="How to Play">
+return (
+    <Modal isOpen={isOpen} onClose={onClose}>
       <div className="max-h-[70vh] overflow-y-auto space-y-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
