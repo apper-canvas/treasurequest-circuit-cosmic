@@ -3,7 +3,7 @@ import Icon from '@/components/atoms/Icon'
 import Text from '@/components/atoms/Text'
 import GameProgress from '@/components/molecules/GameProgress'
 import NavigationPill from '@/components/molecules/NavigationPill'
-import { toast } from 'react-hot-toast'
+import { toast } from 'react-toastify'
 const GameControls = ({ score, treasuresFoundCount, totalTreasures, onResetGame, onShowInstructions }) => {
   return (
     <>
