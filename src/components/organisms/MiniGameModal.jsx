@@ -4,7 +4,7 @@ import Text from '@/components/atoms/Text'
 import Input from '@/components/atoms/Input'
 import Button from '@/components/atoms/Button'
 
-const MiniGameModal = ({ isOpen, onClose, miniGameCode, updateMiniGameCode, onSubmit }) => {
+const MiniGameModal = ({ isOpen, onClose, miniGameCode, onUpdateMiniGameCode, onSubmit }) => {
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
       <div className="text-center mb-6">
@@ -21,7 +21,7 @@ const MiniGameModal = ({ isOpen, onClose, miniGameCode, updateMiniGameCode, onSu
 
       <div className="flex justify-center space-x-4 mb-6">
         {miniGameCode.map((digit, index) => (
-          <Input key={index} value={digit} onChange={(e) => updateMiniGameCode(index, e.target.value)} maxLength={1} />
+          <Input key={index} value={digit} onChange={(e) => onUpdateMiniGameCode(index, e.target.value)} maxLength={1} />
         ))}
       </div>
 
