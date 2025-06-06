@@ -1,0 +1,66 @@
+[
+  {
+    "id": "loc-1",
+    "name": "Sunny Beach",
+    "description": "A pristine beach with golden sand and crystal clear waters. Seashells and driftwood line the shore.",
+    "clue": "Where the morning sun kisses the sand, and waves whisper secrets to the land.",
+    "isUnlocked": true,
+    "treasureId": "treasure-1"
+  },
+  {
+    "id": "loc-2",
+    "name": "Mystic Forest",
+    "description": "A dense forest filled with ancient trees, mysterious sounds, and shafts of sunlight filtering through the canopy.",
+    "clue": "Among the eldest trees where shadows dance, seek the place where spirits entrance.",
+    "isUnlocked": false,
+    "treasureId": "treasure-2"
+  },
+  {
+    "id": "loc-3",
+    "name": "Thunder Peak",
+    "description": "The highest mountain on the island, shrouded in clouds with a magnificent view of the entire archipelago.",
+    "clue": "Where eagles soar and thunder roars, above the clouds and ancient lores.",
+    "isUnlocked": false,
+    "treasureId": "treasure-3"
+  },
+  {
+    "id": "loc-4",
+    "name": "Crystal Cave",
+    "description": "A sparkling underground cavern filled with glowing crystals and underground pools.",
+    "clue": "In depths where diamonds dream and gleam, where underground rivers softly stream.",
+    "isUnlocked": false,
+    "treasureId": "treasure-4"
+  },
+  {
+    "id": "loc-5",
+    "name": "Ancient Ruins",
+    "description": "The remnants of a lost civilization with crumbling stone structures and mysterious hieroglyphs.",
+    "clue": "Where forgotten kings once held their court, and time has made their glory short.",
+    "isUnlocked": false,
+    "treasureId": "treasure-5"
+  },
+  {
+    "id": "loc-6",
+    "name": "Lighthouse Tower",
+    "description": "A tall stone lighthouse standing guard over the rocky coastline, its beacon long since extinguished.",
+    "clue": "Where sailors once found their way home, beneath the tower's ancient dome.",
+    "isUnlocked": false,
+    "treasureId": "treasure-6"
+  },
+  {
+    "id": "loc-7",
+    "name": "Hidden Cove",
+    "description": "A secluded bay surrounded by towering cliffs, accessible only by a narrow pathway.",
+    "clue": "In nature's secret embrace hidden well, where only the brave dare to dwell.",
+    "isUnlocked": false,
+    "treasureId": "treasure-7"
+  },
+  {
+    "id": "loc-8",
+    "name": "Dragon's Peak",
+    "description": "The most treacherous peak on the island, said to be the lair of ancient dragons.",
+    "clue": "Where legends tell of fire and flight, in the realm of eternal night.",
+    "isUnlocked": false,
+    "treasureId": "treasure-8"
+  }
+]

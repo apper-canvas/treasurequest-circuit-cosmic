@@ -1,0 +1,10 @@
+[
+  {
+    "id": "game-1",
+    "score": 0,
+    "treasuresFound": [],
+    "currentLocation": "",
+    "inventory": [],
+    "hintsRemaining": 3
+  }
+]

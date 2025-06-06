@@ -1,0 +1,58 @@
+[
+  {
+    "id": "treasure-1",
+    "name": "Golden Seashell",
+    "value": 100,
+    "icon": "Shell",
+    "location": "Sunny Beach"
+  },
+  {
+    "id": "treasure-2",
+    "name": "Emerald Acorn",
+    "value": 150,
+    "icon": "Leaf",
+    "location": "Mystic Forest"
+  },
+  {
+    "id": "treasure-3",
+    "name": "Storm Crystal",
+    "value": 200,
+    "icon": "Zap",
+    "location": "Thunder Peak"
+  },
+  {
+    "id": "treasure-4",
+    "name": "Diamond Shard",
+    "value": 250,
+    "icon": "Diamond",
+    "location": "Crystal Cave"
+  },
+  {
+    "id": "treasure-5",
+    "name": "Ancient Medallion",
+    "value": 300,
+    "icon": "Medal",
+    "location": "Ancient Ruins"
+  },
+  {
+    "id": "treasure-6",
+    "name": "Lighthouse Lantern",
+    "value": 180,
+    "icon": "Lighthouse",
+    "location": "Lighthouse Tower"
+  },
+  {
+    "id": "treasure-7",
+    "name": "Pearl of the Deep",
+    "value": 350,
+    "icon": "Circle",
+    "location": "Hidden Cove"
+  },
+  {
+    "id": "treasure-8",
+    "name": "Dragon's Crown",
+    "value": 500,
+    "icon": "Crown",
+    "location": "Dragon's Peak"
+  }
+]
